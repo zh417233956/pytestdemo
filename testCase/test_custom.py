@@ -40,18 +40,18 @@ class TestCustom:
         print("test_1")
         assert 't' in x
 
-@pytest.mark.apitest2
-@pytest.mark.incremental  # 如果类中某条没过，之后的全部置为失败
-class TestCustom2:
-    def test_1():  
-        x = "this"
-        print("test_1")
-        assert 't' in x
-    def test_2():  
-        x = "this"
-        print("test_2")
-        assert 'a' in x
-    def test_3():  
-        x = "this"
-        print("test_3")
-        assert 'h' in x 
+# @pytest.mark.apitest2
+# @pytest.mark.incremental  # 如果类中某条没过，之后的全部置为失败
+# class TestCustom2:
+#     def test_1():  
+#         x = "this"
+#         print("test_1")
+#         assert 't' in x
+#     def test_2():  
+#         x = "this"
+#         print("test_2")
+#         assert 'a' in x
+#     def test_3():  
+#         x = "this"
+#         print("test_3")
+#         assert 'h' in x 
